@@ -1,10 +1,13 @@
-// Shared branding for the login and signup pages.
+import { BrandMark } from "@/components/common/brand-mark";
+
 export function AuthHeader() {
   return (
-    <header className="mb-8 text-center">
-      <p className="mb-4 text-xs font-medium tracking-widest text-emerald-200 uppercase">Your kitchen companion</p>
-      <h1 className="text-4xl font-semibold tracking-tight text-amber-50 sm:text-5xl">Recipe Book</h1>
-      <p className="mt-3 text-sm text-emerald-100/80">Keep your favorite meals in one place.</p>
+    <header className="text-center">
+      <div className="mb-5 flex justify-center">
+        <BrandMark />
+      </div>
+      <p className="text-xs font-semibold tracking-[0.22em] text-terracotta uppercase">Your kitchen companion</p>
+      <p className="mt-2 text-sm text-ink-muted">Keep your favorite meals in one place.</p>
     </header>
   );
 }

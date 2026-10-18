@@ -53,7 +53,7 @@ export function AdminRecipes() {
   return (
     <section aria-label="All recipes">
       <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
-        <p>{loading ? "Loading recipes…" : `${recipes.length} recipes across all users`}</p>
+        <p className="text-sm text-ink-muted">{loading ? "Loading recipes…" : `${recipes.length} recipes across all users`}</p>
         <Button variant="secondary" disabled={loading} onClick={handleRefresh}>
           Refresh
         </Button>

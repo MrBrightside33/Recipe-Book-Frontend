@@ -9,7 +9,7 @@ export function Select({ className, error, children, ...props }: SelectProps) {
   return (
     <div>
       <select
-        className={cn("w-full rounded-xl border bg-white/60 px-3 py-2.5 text-sm text-emerald-950 outline-none focus:border-emerald-700 focus:ring-2 focus:ring-emerald-700/15", error ? "border-red-500" : "border-emerald-900/15", className)}
+        className={cn("w-full rounded-xl border bg-cream px-3 py-2.5 text-sm text-ink outline-none focus:border-terracotta focus:ring-2 focus:ring-terracotta/20", error ? "border-red-500" : "border-line", className)}
         aria-invalid={error ? true : undefined}
         {...props}
       >

@@ -5,10 +5,9 @@ import { RecipeDetails } from "@/components/features/recipe/recipe-details";
 export default function RecipePage() {
   const { id } = useParams();
 
-  // The page reads the URL; the feature fetches and displays that recipe.
   return (
     <Section>
-      <Link to="/user" className="text-sm font-medium text-emerald-800 hover:text-emerald-950">
+      <Link to="/user" className="text-sm font-medium text-terracotta hover:text-terracotta-dark">
         ← Back to recipes
       </Link>
 
